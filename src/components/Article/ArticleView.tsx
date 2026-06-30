@@ -2,6 +2,14 @@ import React from "react";
 import { Article } from "../../data/articles/articleTypes";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import DiagramView from "../Diagram/DiagramView";
+import {
+  ReadIcon,
+  AlertIcon,
+  StarIcon,
+  BookIcon,
+  CheckIcon,
+  XIcon,
+} from "../Icons/Icons";
 import "./ArticleView.css";
 
 interface ArticleViewProps {
@@ -14,7 +22,9 @@ const ArticleView: React.FC<ArticleViewProps> = ({ article }) => {
       <header className="article-header">
         <h1>{article.title}</h1>
         <div className="article-meta">
-          <span className="read-time">📖 {article.readTime} min read</span>
+          <span className="read-time">
+            <ReadIcon size={18} /> {article.readTime} min read
+          </span>
           <span className="last-updated">
             Last updated: {article.lastUpdated}
           </span>
@@ -79,20 +89,26 @@ const ArticleView: React.FC<ArticleViewProps> = ({ article }) => {
 
       {article.commonPitfalls && article.commonPitfalls.length > 0 && (
         <section className="article-section pitfalls-section">
-          <h2>⚠️ Common Pitfalls</h2>
+          <h2>
+            <AlertIcon size={24} className="section-icon" /> Common Pitfalls
+          </h2>
           {article.commonPitfalls.map((pitfall, index) => (
             <div key={index} className="pitfall-item">
               <h3>{pitfall.title}</h3>
               <p>{pitfall.description}</p>
               {pitfall.wrongExample && (
                 <div className="example-container wrong">
-                  <h4>❌ Wrong:</h4>
+                  <h4>
+                    <XIcon size={20} /> Wrong:
+                  </h4>
                   <CodeSnippet snippet={pitfall.wrongExample} />
                 </div>
               )}
               {pitfall.correctExample && (
                 <div className="example-container correct">
-                  <h4>✅ Correct:</h4>
+                  <h4>
+                    <CheckIcon size={20} /> Correct:
+                  </h4>
                   <CodeSnippet snippet={pitfall.correctExample} />
                 </div>
               )}
@@ -103,7 +119,9 @@ const ArticleView: React.FC<ArticleViewProps> = ({ article }) => {
 
       {article.bestPractices && article.bestPractices.length > 0 && (
         <section className="article-section best-practices-section">
-          <h2>✨ Best Practices</h2>
+          <h2>
+            <StarIcon size={24} className="section-icon" /> Best Practices
+          </h2>
           {article.bestPractices.map((practice, index) => (
             <div key={index} className="practice-item">
               <h3>{practice.title}</h3>
@@ -116,7 +134,9 @@ const ArticleView: React.FC<ArticleViewProps> = ({ article }) => {
 
       {article.researchPapers && article.researchPapers.length > 0 && (
         <section className="article-section research-section">
-          <h2>📚 Research Papers</h2>
+          <h2>
+            <BookIcon size={24} className="section-icon" /> Research Papers
+          </h2>
           <div className="research-papers">
             {article.researchPapers.map((paper, index) => (
               <div key={index} className="paper-item">

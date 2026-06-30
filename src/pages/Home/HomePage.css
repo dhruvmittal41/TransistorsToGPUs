@@ -27,7 +27,7 @@
 
 .hero-section::before {
   /* Decorative corner */
-  content: '⚡ WANTED ⚡';
+  content: 'WANTED';
   position: absolute;
   top: -5px;
   left: 50%;
@@ -193,16 +193,23 @@
 }
 
 .feature-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-  filter: sepia(0.3);
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-wood-light), var(--color-wood-medium));
+  border-radius: 50%;
+  box-shadow: var(--shadow-wood);
+  color: var(--color-parchment-light);
   transition: all var(--transition-medium);
 }
 
 .feature-card:hover .feature-icon {
   transform: scale(1.15) rotate(5deg);
-  filter: sepia(0.6);
+  box-shadow: var(--shadow-deep);
+  background: linear-gradient(135deg, var(--color-wood-medium), var(--color-wood-dark));
 }
 
 .feature-card h3 {
@@ -271,17 +278,19 @@
 }
 
 .topic-card::before {
-  /* Nail heads */
-  content: '⚫';
+  /* Western signboard decoration */
+  content: '';
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 0.5rem;
-  color: var(--color-ink-black);
-  text-shadow: -5px 0 0 currentColor, 
-               calc(100% - 20px) 0 0 currentColor,
-               calc(100% - 15px) 0 0 currentColor;
-  width: 100%;
+  top: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  background: var(--color-ink-black);
+  border-radius: 50%;
+  box-shadow: 
+    calc(100% - 16px) 0 0 var(--color-ink-black),
+    0 calc(100% - 16px) 0 var(--color-ink-black),
+    calc(100% - 16px) calc(100% - 16px) 0 var(--color-ink-black);
 }
 
 .topic-card:hover {
@@ -349,22 +358,26 @@
 
 .cta-section::before {
   /* Decorative flourish */
-  content: '❈';
+  content: '';
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 2rem;
-  color: var(--color-ink-faded);
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--color-ink-faded);
+  border-radius: 50%;
   opacity: 0.3;
 }
 
 .cta-section::after {
-  content: '❈';
+  content: '';
   position: absolute;
   bottom: 20px;
   right: 20px;
-  font-size: 2rem;
-  color: var(--color-ink-faded);
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--color-ink-faded);
+  border-radius: 50%;
   opacity: 0.3;
 }
 

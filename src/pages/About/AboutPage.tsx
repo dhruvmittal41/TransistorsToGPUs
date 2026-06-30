@@ -86,14 +86,19 @@ const AboutPage: React.FC = () => {
               feel free to reach out.
             </p>
             <div className="contact-links">
-              <a href="#github" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/dhruvmittal41"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 GitHub
               </a>
-              <a href="#linkedin" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/dhruv-mittal-a701b1330/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
-              </a>
-              <a href="#twitter" target="_blank" rel="noopener noreferrer">
-                Twitter
               </a>
             </div>
           </section>

@@ -1,0 +1,146 @@
+/* Icon styles matching Old West theme */
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  transition: all var(--transition-fast);
+}
+
+.icon svg {
+  stroke: currentColor;
+  fill: none;
+}
+
+.icon.filled svg {
+  fill: currentColor;
+}
+
+/* Icon color variants matching Old West theme */
+.icon-rust {
+  color: var(--color-rust);
+}
+
+.icon-wood {
+  color: var(--color-wood-medium);
+}
+
+.icon-ink {
+  color: var(--color-ink-black);
+}
+
+.icon-gold {
+  color: var(--color-gold);
+}
+
+.icon-copper {
+  color: var(--color-copper);
+}
+
+/* Icon sizes */
+.icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-md {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-lg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-xl {
+  width: 32px;
+  height: 32px;
+}
+
+/* Hover effects */
+.icon-hover:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Icon with text */
+.icon-with-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-with-text .icon {
+  flex-shrink: 0;
+}
+
+/* Social icons specific styling */
+.social-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.social-icon-wrapper:hover {
+  color: var(--color-rust);
+  transform: translateX(4px);
+}
+
+/* Feature icon for cards */
+.feature-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-wood-light), var(--color-wood-medium));
+  border-radius: 50%;
+  margin: 0 auto var(--space-md);
+  box-shadow: var(--shadow-wood);
+  color: var(--color-parchment-light);
+  transition: all var(--transition-medium);
+}
+
+.feature-icon-wrapper:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: var(--shadow-deep);
+}
+
+/* Nav icon styling */
+.nav-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: all var(--transition-fast);
+}
+
+/* Section header icons */
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--space-sm);
+  color: var(--color-rust);
+}
+
+/* Status icons */
+.icon-success {
+  color: #4caf50;
+}
+
+.icon-error {
+  color: #f44336;
+}
+
+.icon-warning {
+  color: var(--color-copper);
+}
+
+.icon-info {
+  color: var(--color-rust);
+}

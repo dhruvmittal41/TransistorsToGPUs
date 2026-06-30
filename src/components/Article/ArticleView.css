@@ -24,6 +24,13 @@
   margin-bottom: 1rem;
   color: #718096;
   font-size: 0.9rem;
+  align-items: center;
+}
+
+.read-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .article-description {
@@ -67,6 +74,15 @@
   color: #2d3748;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.article-section h2 .section-icon {
+  color: var(--color-rust);
+  display: inline-flex;
+  align-items: center;
 }
 
 .article-section h3 {
@@ -108,6 +124,9 @@
 .example-container h4 {
   margin-bottom: 0.5rem;
   font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .example-container.wrong h4 {

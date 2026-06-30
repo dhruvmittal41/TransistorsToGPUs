@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GitHubIcon, LinkedInIcon, MailIcon, HeartIcon } from "../Icons/Icons";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
@@ -92,26 +93,34 @@ const Footer: React.FC = () => {
           <h4>Connect</h4>
           <ul className="social-links">
             <li>
-              <a href="#github" target="_blank" rel="noopener noreferrer">
-                <span className="social-icon">💻</span>
+              <a
+                href="https://github.com/dhruvmittal41"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="social-icon">
+                  <GitHubIcon size={20} />
+                </span>
                 GitHub
               </a>
             </li>
             <li>
-              <a href="#linkedin" target="_blank" rel="noopener noreferrer">
-                <span className="social-icon">💼</span>
+              <a
+                href="https://www.linkedin.com/in/dhruv-mittal-a701b1330/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="social-icon">
+                  <LinkedInIcon size={20} />
+                </span>
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="#twitter" target="_blank" rel="noopener noreferrer">
-                <span className="social-icon">🐦</span>
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="mailto:your@email.com">
-                <span className="social-icon">📧</span>
+              <a href="mailto:mittaldhruv41@gmail.com">
+                <span className="social-icon">
+                  <MailIcon size={20} />
+                </span>
                 Email
               </a>
             </li>
@@ -123,7 +132,11 @@ const Footer: React.FC = () => {
         <div className="footer-bottom-content">
           <p>&copy; {currentYear} Transistors to GPUs. All rights reserved.</p>
           <p className="footer-made-with">
-            Made with <span className="heart">❤️</span> for learners everywhere
+            Made with{" "}
+            <span className="heart">
+              <HeartIcon size={16} />
+            </span>{" "}
+            by Dhruv Mittal
           </p>
         </div>
       </div>

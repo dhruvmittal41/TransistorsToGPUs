@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { SearchIcon } from "../Icons/Icons";
 import "./SearchBar.css";
 
 const SearchBar: React.FC = () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = React.useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -23,7 +24,7 @@ const SearchBar: React.FC = () => {
         className="search-input"
       />
       <button type="submit" className="search-button">
-        🔍 Search
+        <SearchIcon size={20} /> Search
       </button>
     </form>
   );

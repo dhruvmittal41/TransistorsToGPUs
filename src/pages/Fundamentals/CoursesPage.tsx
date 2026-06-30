@@ -2,6 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { courseStructure } from "../../data/navigation/courseStructure";
 import SEO from "../../components/SEO/SEO";
+import {
+  BookIcon,
+  CodeIcon,
+  CompassIcon,
+  AlertIcon,
+  StarIcon,
+  DocumentIcon,
+} from "../../components/Icons/Icons";
 import "./CoursesPage.css";
 
 const CoursesPage: React.FC = () => {
@@ -45,13 +53,26 @@ const CoursesPage: React.FC = () => {
             <h3>Course Features</h3>
             <ul>
               <li>
-                📚 Detailed explanations with theory and practical examples
+                <BookIcon size={18} /> Detailed explanations with theory and
+                practical examples
               </li>
-              <li>💻 Code snippets in Verilog and SystemVerilog</li>
-              <li>🎨 Diagrams and visual aids for complex concepts</li>
-              <li>⚠️ Common pitfalls and how to avoid them</li>
-              <li>✨ Industry best practices</li>
-              <li>📄 References to key research papers</li>
+              <li>
+                <CodeIcon size={18} /> Code snippets in Verilog and
+                SystemVerilog
+              </li>
+              <li>
+                <CompassIcon size={18} /> Diagrams and visual aids for complex
+                concepts
+              </li>
+              <li>
+                <AlertIcon size={18} /> Common pitfalls and how to avoid them
+              </li>
+              <li>
+                <StarIcon size={18} /> Industry best practices
+              </li>
+              <li>
+                <DocumentIcon size={18} /> References to key research papers
+              </li>
             </ul>
           </div>
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HomeIcon, BookIcon, DocumentIcon, InfoIcon } from "../Icons/Icons";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -40,19 +41,27 @@ const Header: React.FC = () => {
 
         <nav className={`main-nav ${mobileMenuOpen ? "mobile-open" : ""}`}>
           <NavLink to="/" end onClick={() => setMobileMenuOpen(false)}>
-            <span className="nav-icon">🏠</span>
+            <span className="nav-icon">
+              <HomeIcon size={20} />
+            </span>
             <span>Home</span>
           </NavLink>
           <NavLink to="/courses" onClick={() => setMobileMenuOpen(false)}>
-            <span className="nav-icon">📚</span>
+            <span className="nav-icon">
+              <BookIcon size={20} />
+            </span>
             <span>Courses</span>
           </NavLink>
           <NavLink to="/research" onClick={() => setMobileMenuOpen(false)}>
-            <span className="nav-icon">📄</span>
+            <span className="nav-icon">
+              <DocumentIcon size={20} />
+            </span>
             <span>Research</span>
           </NavLink>
           <NavLink to="/about" onClick={() => setMobileMenuOpen(false)}>
-            <span className="nav-icon">ℹ️</span>
+            <span className="nav-icon">
+              <InfoIcon size={20} />
+            </span>
             <span>About</span>
           </NavLink>
         </nav>

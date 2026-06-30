@@ -2,6 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { courseStructure } from "../../data/navigation/courseStructure";
 import SEO from "../../components/SEO/SEO";
+import {
+  BookIcon,
+  CodeIcon,
+  CompassIcon,
+  AlertIcon,
+  StarIcon,
+  DocumentIcon,
+} from "../../components/Icons/Icons";
 import "./HomePage.css";
 
 const HomePage: React.FC = () => {
@@ -32,7 +40,9 @@ const HomePage: React.FC = () => {
 
         <section className="features-section">
           <div className="feature-card">
-            <div className="feature-icon">📚</div>
+            <div className="feature-icon">
+              <BookIcon size={40} />
+            </div>
             <h3>Comprehensive Content</h3>
             <p>
               In-depth explanations from basic transistors to cutting-edge GPU
@@ -40,14 +50,18 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">💻</div>
+            <div className="feature-icon">
+              <CodeIcon size={40} />
+            </div>
             <h3>Code Examples</h3>
             <p>
               Verilog and SystemVerilog implementations with practical examples
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🎨</div>
+            <div className="feature-icon">
+              <CompassIcon size={40} />
+            </div>
             <h3>Visual Learning</h3>
             <p>
               Detailed diagrams and visualizations to understand complex
@@ -55,17 +69,23 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">⚠️</div>
+            <div className="feature-icon">
+              <AlertIcon size={40} />
+            </div>
             <h3>Common Pitfalls</h3>
             <p>Learn from mistakes - understand what to avoid and why</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">✨</div>
+            <div className="feature-icon">
+              <StarIcon size={40} />
+            </div>
             <h3>Best Practices</h3>
             <p>Industry-standard approaches and design patterns</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">📄</div>
+            <div className="feature-icon">
+              <DocumentIcon size={40} />
+            </div>
             <h3>Research Papers</h3>
             <p>Key research findings and academic insights</p>
           </div>
