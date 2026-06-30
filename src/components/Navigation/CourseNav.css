@@ -1,35 +1,51 @@
+/* ============================================
+   COURSE NAV - Old West Signboard Style
+   ============================================ */
 .course-nav {
-  background: #ffffff;
-  border-radius: 12px;
+  background: var(--color-parchment-light);
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(0, 0, 0, 0.02) 3px
+    );
+  border-radius: 8px;
   padding: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-wood);
   position: sticky;
   top: 100px;
   max-height: calc(100vh - 120px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid #e2e8f0;
+  border: 4px solid var(--color-wood-dark);
 }
 
 .course-nav-header {
   padding: 1.5rem 1.5rem 1rem;
-  border-bottom: 1px solid #e2e8f0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  border-bottom: 4px double var(--color-rope);
+  background: linear-gradient(180deg, var(--color-wood-light), var(--color-wood-medium));
+  color: var(--color-parchment-light);
 }
 
 .course-nav-header h2 {
   margin: 0 0 0.25rem 0;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .course-nav-subtitle {
   font-size: 0.875rem;
   opacity: 0.9;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: var(--font-body);
+  letter-spacing: 0.5px;
 }
 
 .course-nav-list {
@@ -39,14 +55,18 @@
 }
 
 .topic-section {
-  margin-bottom: 0.25rem;
-  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
   overflow: hidden;
-  transition: background-color 0.2s;
+  transition: all var(--transition-medium);
+  border: 2px solid var(--color-parchment-dark);
+  background: var(--color-parchment);
 }
 
 .topic-section:hover {
-  background: #f7fafc;
+  background: var(--color-parchment-light);
+  border-color: var(--color-rope);
+  box-shadow: var(--shadow-paper);
 }
 
 .topic-header {
@@ -54,84 +74,93 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.875rem 1rem;
+  padding: 1rem;
   background: none;
   border: none;
   cursor: pointer;
   text-align: left;
-  border-radius: 8px;
-  transition: all 0.2s;
-  font-family: inherit;
+  border-radius: 6px;
+  transition: all var(--transition-medium);
+  font-family: var(--font-handwritten);
 }
 
 .topic-header:hover {
-  background: #edf2f7;
+  background: var(--color-parchment-aged);
 }
 
 .topic-header:focus {
-  outline: 2px solid #667eea;
+  outline: 3px solid var(--color-rust);
   outline-offset: 2px;
 }
 
 .topic-header.expanded {
-  background: #edf2f7;
-  font-weight: 600;
+  background: var(--color-parchment-aged);
+  font-weight: 700;
 }
 
 .expand-icon {
-  color: #667eea;
-  font-size: 1rem;
+  color: var(--color-parchment-light);
+  font-size: 1.1rem;
   font-weight: 700;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: #e0e7ff;
-  border-radius: 4px;
-  transition: all 0.2s;
+  background: var(--color-wood-medium);
+  border-radius: 50%;
+  transition: all var(--transition-medium);
+  box-shadow: var(--shadow-paper);
+  border: 2px solid var(--color-wood-dark);
 }
 
 .topic-header:hover .expand-icon {
-  background: #667eea;
-  color: white;
+  background: var(--color-rust);
+  transform: rotate(90deg);
 }
 
 .topic-header.expanded .expand-icon {
-  background: #667eea;
-  color: white;
+  background: var(--color-rust);
+  transform: rotate(90deg);
 }
 
 .topic-title {
-  color: #1a202c;
-  font-weight: 600;
-  font-size: 0.9375rem;
+  color: var(--color-ink-black);
+  font-weight: 700;
+  font-size: 1rem;
   flex: 1;
   line-height: 1.4;
+  letter-spacing: 0.3px;
 }
 
 .topic-count {
-  color: #718096;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  background: #edf2f7;
-  padding: 0.125rem 0.5rem;
-  border-radius: 10px;
-  min-width: 1.5rem;
+  color: var(--color-ink-brown);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--color-gold);
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  min-width: 1.75rem;
   text-align: center;
+  box-shadow: var(--shadow-paper);
+  border: 2px solid var(--color-copper);
+  font-family: var(--font-title);
 }
 
 .topic-header.expanded .topic-count {
-  background: #667eea;
-  color: white;
+  background: var(--color-rust);
+  color: var(--color-parchment-light);
+  border-color: var(--color-wood-dark);
 }
 
 .subtopic-list {
   list-style: none;
-  padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
   margin: 0;
-  animation: slideDown 0.2s ease-out;
+  animation: slideDown 0.3s ease-out;
+  background: rgba(0, 0, 0, 0.03);
+  border-top: 2px solid var(--color-rope);
 }
 
 @keyframes slideDown {
@@ -146,60 +175,64 @@
 }
 
 .subtopic-list li {
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.25rem;
 }
 
 .subtopic-list a {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.625rem 1rem 0.625rem 2.5rem;
-  color: #4a5568;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  color: var(--color-ink-brown);
   text-decoration: none;
-  border-radius: 6px;
-  transition: all 0.2s;
-  font-size: 0.875rem;
+  border-radius: 4px;
+  transition: all var(--transition-medium);
+  font-size: 0.9rem;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: var(--font-body);
+  border: 2px solid transparent;
 }
 
 .subtopic-list a::before {
-  content: '';
+  content: '➤';
   position: absolute;
-  left: 1.75rem;
-  width: 4px;
-  height: 4px;
-  background: #cbd5e0;
-  border-radius: 50%;
-  transition: all 0.2s;
+  left: 1rem;
+  color: var(--color-rope);
+  font-size: 0.7rem;
+  transition: all var(--transition-medium);
 }
 
 .subtopic-list a:hover {
-  background: #edf2f7;
-  color: #667eea;
+  background: var(--color-parchment-light);
+  color: var(--color-rust);
   padding-left: 2.75rem;
+  border-color: var(--color-rust);
+  box-shadow: var(--shadow-paper);
 }
 
 .subtopic-list a:hover::before {
-  background: #667eea;
-  transform: scale(1.5);
+  color: var(--color-rust);
+  transform: translateX(4px);
 }
 
 .subtopic-list a:focus {
-  outline: 2px solid #667eea;
+  outline: 3px solid var(--color-rust);
   outline-offset: 2px;
 }
 
 .subtopic-list a.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  font-weight: 600;
+  background: linear-gradient(180deg, var(--color-wood-medium), var(--color-wood-dark));
+  color: var(--color-parchment-light);
+  font-weight: 700;
   padding-left: 2.75rem;
+  border-color: var(--color-wood-dark);
+  box-shadow: var(--shadow-wood);
 }
 
 .subtopic-list a.active::before {
-  background: white;
-  transform: scale(1.5);
+  color: var(--color-gold);
+  transform: translateX(4px);
 }
 
 .subtopic-number {
@@ -218,22 +251,24 @@
   flex: 1;
 }
 
-/* Scrollbar styling */
+/* Scrollbar styling - Western Theme */
 .course-nav-list::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 .course-nav-list::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--color-parchment-dark);
+  border: 2px solid var(--color-wood-medium);
 }
 
 .course-nav-list::-webkit-scrollbar-thumb {
-  background: #cbd5e0;
-  border-radius: 3px;
+  background: var(--color-wood-medium);
+  border: 2px solid var(--color-parchment-dark);
+  border-radius: 4px;
 }
 
 .course-nav-list::-webkit-scrollbar-thumb:hover {
-  background: #a0aec0;
+  background: var(--color-wood-dark);
 }
 
 @media (max-width: 1024px) {
