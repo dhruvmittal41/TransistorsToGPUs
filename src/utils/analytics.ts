@@ -5,7 +5,11 @@ export const GA_MEASUREMENT_ID = "G-TLR428LQ68"; // TODO: Replace with your GA I
 
 // Initialize Google Analytics
 export const initGA = () => {
-  if (typeof window !== "undefined" && GA_MEASUREMENT_ID !== "G-TLR428LQ68") {
+  if (
+    typeof window !== "undefined" &&
+    GA_MEASUREMENT_ID &&
+    GA_MEASUREMENT_ID.startsWith("G-")
+  ) {
     const script = document.createElement("script");
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     script.async = true;

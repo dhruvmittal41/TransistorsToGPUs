@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -14,7 +14,6 @@ import AboutPage from "./pages/About/AboutPage";
 import CompactNav from "./components/Navigation/CompactNav";
 import { initGA, trackPageView } from "./utils/analytics";
 import "./App.css";
-import ReactGA from "react-ga4";
 
 // Analytics wrapper component
 function AnalyticsWrapper({ children }: { children: React.ReactNode }) {
@@ -33,13 +32,7 @@ function AnalyticsWrapper({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
 
-ReactGA.initialize("G-TLR428LQ68");
 function App() {
-  useEffect(() => {
-    // Send a pageview when the component loads
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-  }, []);
-
   return (
     <Router>
       <AnalyticsWrapper>
