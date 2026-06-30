@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TransistorsToGPUs/static/css/main.caeae41f.css",
-    "main.js": "/TransistorsToGPUs/static/js/main.b335bd23.js",
-    "static/js/453.0cb500fb.chunk.js": "/TransistorsToGPUs/static/js/453.0cb500fb.chunk.js",
-    "index.html": "/TransistorsToGPUs/index.html",
-    "main.caeae41f.css.map": "/TransistorsToGPUs/static/css/main.caeae41f.css.map",
-    "main.b335bd23.js.map": "/TransistorsToGPUs/static/js/main.b335bd23.js.map",
-    "453.0cb500fb.chunk.js.map": "/TransistorsToGPUs/static/js/453.0cb500fb.chunk.js.map"
+    "main.css": "/static/css/main.caeae41f.css",
+    "main.js": "/static/js/main.401b4612.js",
+    "static/js/453.0cb500fb.chunk.js": "/static/js/453.0cb500fb.chunk.js",
+    "index.html": "/index.html",
+    "main.caeae41f.css.map": "/static/css/main.caeae41f.css.map",
+    "main.401b4612.js.map": "/static/js/main.401b4612.js.map",
+    "453.0cb500fb.chunk.js.map": "/static/js/453.0cb500fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.caeae41f.css",
-    "static/js/main.b335bd23.js"
+    "static/js/main.401b4612.js"
   ]
 }
