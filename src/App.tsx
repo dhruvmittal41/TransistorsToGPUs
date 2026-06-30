@@ -5,6 +5,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/Home/HomePage";
 import CoursesPage from "./pages/Fundamentals/CoursesPage";
@@ -34,23 +35,25 @@ function AnalyticsWrapper({ children }: { children: React.ReactNode }) {
 
 function App() {
   return (
-    <Router>
-      <AnalyticsWrapper>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/courses" element={<CoursesPage />} />
-            <Route
-              path="/topic/:topicSlug/:subtopicSlug"
-              element={<TopicPage />}
-            />
-            <Route path="/research" element={<ResearchPage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
-        </Layout>
-        <CompactNav />
-      </AnalyticsWrapper>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <AnalyticsWrapper>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/courses" element={<CoursesPage />} />
+              <Route
+                path="/topic/:topicSlug/:subtopicSlug"
+                element={<TopicPage />}
+              />
+              <Route path="/research" element={<ResearchPage />} />
+              <Route path="/about" element={<AboutPage />} />
+            </Routes>
+          </Layout>
+          <CompactNav />
+        </AnalyticsWrapper>
+      </Router>
+    </HelmetProvider>
   );
 }
 

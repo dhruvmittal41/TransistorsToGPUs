@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Courses Page -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/courses</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/about</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Research Page -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/research</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Fundamentals Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/fundamentals/history</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/fundamentals/transistors</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/fundamentals/logic-gates</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/fundamentals/combinational-circuits</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/fundamentals/sequential-circuits</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Digital Logic Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/digital-logic/introduction</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/digital-logic/hdl-overview</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/digital-logic/verilog-basics</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/digital-logic/structural-modeling</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/digital-logic/behavioral-modeling</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Basic Architecture Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/basic-architecture/isa</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/basic-architecture/datapath</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/basic-architecture/control-unit</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/basic-architecture/single-cycle</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/basic-architecture/multi-cycle</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Pipelining Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/pipelining/overview</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/pipelining/hazards</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/pipelining/forwarding</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/pipelining/branch-prediction</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/pipelining/exceptions</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Memory Hierarchy Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/memory-hierarchy/overview</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/memory-hierarchy/cache-design</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/memory-hierarchy/cache-performance</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/memory-hierarchy/virtual-memory</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Parallel Architecture Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/parallel-architecture/overview</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/parallel-architecture/ilp</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/parallel-architecture/simd</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/parallel-architecture/multicore</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- GPU Architecture Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/gpu-architecture/overview</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/gpu-architecture/cuda-model</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/gpu-architecture/streaming-multiprocessors</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/gpu-architecture/memory-model</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Modern GPUs Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/modern-gpus/tensor-cores</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/modern-gpus/ray-tracing</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/modern-gpus/ampere</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/modern-gpus/hopper</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- AI Accelerators Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/ai-accelerators/overview</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/ai-accelerators/tpu</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/ai-accelerators/specialized</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/ai-accelerators/future</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Advanced Topics -->
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/advanced-topics/power-optimization</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/advanced-topics/timing-analysis</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://dhruvmittal41.github.io/TransistorsToGPUs/#/topic/advanced-topics/verification</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
