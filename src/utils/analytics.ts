@@ -1,11 +1,11 @@
 // Google Analytics Setup
 // Replace 'G-XXXXXXXXXX' with your actual Google Analytics Measurement ID
 
-export const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // TODO: Replace with your GA ID
+export const GA_MEASUREMENT_ID = "G-TLR428LQ68"; // TODO: Replace with your GA ID
 
 // Initialize Google Analytics
 export const initGA = () => {
-  if (typeof window !== "undefined" && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") {
+  if (typeof window !== "undefined" && GA_MEASUREMENT_ID !== "G-TLR428LQ68") {
     const script = document.createElement("script");
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     script.async = true;
