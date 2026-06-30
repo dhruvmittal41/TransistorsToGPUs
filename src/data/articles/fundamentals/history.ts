@@ -32,7 +32,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "public/images/fundamentals/history/RomanAbacusRecon.png">
+          <img src="${process.env.PUBLIC_URL}/images/fundamentals/history/RomanAbacusRecon.png" alt="Roman Abacus" style="max-width: 100%; height: auto;">
           <br><i>*Roman Abacus</i>
           </div>
           This led to another idea : <br>
@@ -45,7 +45,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "public/images/fundamentals/history/Pascaline.jpg">
+          <img src="${process.env.PUBLIC_URL}/images/fundamentals/history/Pascaline.jpg" alt="Pascaline" style="max-width: 100%; height: auto;">
           <br><i>*Pascaline</i>
           </div>
           <br>
@@ -54,7 +54,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "public/images/fundamentals/history/Babbage_Difference_Engine.jpg" width="600" height="400">
+          <img src="${process.env.PUBLIC_URL}/images/fundamentals/history/Babbage_Difference_Engine.jpg" alt="Babbage Difference Engine" style="max-width: 600px; height: auto; width: 100%;">
           <br><i>*Difference Engine</i>
           </div>
           <br>
@@ -63,7 +63,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "public/images/fundamentals/history/Babbages_Analytical_Engine.jpg" width="600" height="400">
+          <img src="${process.env.PUBLIC_URL}/images/fundamentals/history/Babbages_Analytical_Engine.jpg" alt="Babbage Analytical Engine" style="max-width: 600px; height: auto; width: 100%;">
           <br><i>*Analytical Engine</i>
           </div>
           <br>
