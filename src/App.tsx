@@ -38,7 +38,7 @@ function App() {
       <AnalyticsWrapper>
         <Layout>
           <Routes>
-            <Route path="/TransistorsToGPUs/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/courses" element={<CoursesPage />} />
             <Route
               path="/topic/:topicSlug/:subtopicSlug"
