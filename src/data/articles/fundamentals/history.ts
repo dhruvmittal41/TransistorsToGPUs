@@ -67,6 +67,20 @@ export const historyArticle: Article = {
           <br><i>*Analytical Engine</i>
           </div>
           <br>
+          <div style="text-align : center;">
+          <b><i>But all of these were based on mechanical gears which were driven manually by a human and were too slow. So another question was pondered "Can we use Electricity to control mechanical switches?"</i></b>
+          </div>
+          <br>
+          <li>
+            <b>Analytical Engine :</b> Designed by Charles Babbage, it was a mechanical computer having concepts of modern CPUs like Memory, Programs etc.
+          </li>
+          <br>
+          <div style="text-align: center;">
+          <img src="${process.env.PUBLIC_URL}/images/fundamentals/history/Babbages_Analytical_Engine.jpg" alt="Babbage Analytical Engine" style="max-width: 600px; height: auto; width: 100%;">
+          <br><i>*Analytical Engine</i>
+          </div>
+          <br>
+
         </ul>
       `,
 

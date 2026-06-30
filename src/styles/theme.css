@@ -1,0 +1,405 @@
+/**
+ * Old West Theme Configuration
+ * 
+ * Typography: Handwritten, vintage fonts
+ * Colors: Sepia tones, wood browns, ink blacks
+ * Textures: Parchment paper, wood grain, rope
+ */
+
+/* ============================================
+   GOOGLE FONTS - Old West Style
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;500;600;700&family=Covered+By+Your+Grace&family=Permanent+Marker&family=Special+Elite&family=Rye&display=swap');
+
+/* ============================================
+   CSS CUSTOM PROPERTIES (Variables)
+   ============================================ */
+:root {
+  /* === FONTS === */
+  --font-handwritten: 'Caveat', 'Architects Daughter', cursive;
+  --font-title: 'Rye', 'Permanent Marker', cursive;
+  --font-body: 'Special Elite', 'Courier New', monospace;
+  --font-accent: 'Covered By Your Grace', cursive;
+  
+  /* === COLORS === */
+  /* Parchment & Paper */
+  --color-parchment-light: #f4ecd8;
+  --color-parchment: #e8dcc0;
+  --color-parchment-dark: #d4c5a0;
+  --color-parchment-aged: #c9b896;
+  
+  /* Ink & Text */
+  --color-ink-black: #2d2416;
+  --color-ink-brown: #4a3f2e;
+  --color-ink-faded: #6b5d4f;
+  --color-ink-light: #8f7d6b;
+  
+  /* Wood Tones */
+  --color-wood-dark: #3e2723;
+  --color-wood-medium: #5d4037;
+  --color-wood-light: #8d6e63;
+  --color-wood-aged: #a1887f;
+  
+  /* Accent Colors */
+  --color-rope: #b8956a;
+  --color-rust: #a0522d;
+  --color-gold: #d4af37;
+  --color-copper: #b87333;
+  
+  /* Shadows & Effects */
+  --shadow-paper: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-wood: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-deep: 6px 6px 16px rgba(0, 0, 0, 0.4);
+  --shadow-text: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  
+  /* === SPACING === */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  
+  /* === BORDERS === */
+  --border-thin: 2px solid var(--color-wood-medium);
+  --border-thick: 4px solid var(--color-wood-dark);
+  --border-rope: 3px double var(--color-rope);
+  
+  /* === TRANSITIONS === */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ============================================
+   PARCHMENT PAPER TEXTURE
+   ============================================ */
+.parchment-texture {
+  background-color: var(--color-parchment);
+  background-image: 
+    /* Paper grain */
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(0, 0, 0, 0.02) 3px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(0, 0, 0, 0.02) 3px
+    ),
+    /* Aging spots */
+    radial-gradient(circle at 20% 30%, rgba(139, 99, 63, 0.03) 0%, transparent 10%),
+    radial-gradient(circle at 80% 70%, rgba(139, 99, 63, 0.03) 0%, transparent 10%),
+    radial-gradient(circle at 40% 80%, rgba(139, 99, 63, 0.02) 0%, transparent 8%);
+}
+
+/* ============================================
+   WOOD TEXTURE
+   ============================================ */
+.wood-texture {
+  background-color: var(--color-wood-medium);
+  background-image: 
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 20%,
+      transparent 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.05) 2px,
+      rgba(0, 0, 0, 0.05) 4px
+    );
+}
+
+/* ============================================
+   SIGNBOARD STYLES
+   ============================================ */
+.signboard {
+  background: linear-gradient(180deg, 
+    var(--color-wood-light) 0%, 
+    var(--color-wood-medium) 50%, 
+    var(--color-wood-dark) 100%
+  );
+  border: var(--border-thick);
+  border-radius: 8px;
+  box-shadow: var(--shadow-wood);
+  position: relative;
+  padding: var(--space-md) var(--space-lg);
+}
+
+.signboard::before {
+  /* Hanging rope effect */
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 20px;
+  background: var(--color-rope);
+  box-shadow: -15px 0 0 var(--color-rope), 15px 0 0 var(--color-rope);
+}
+
+.signboard::after {
+  /* Wood grain lines */
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(0, 0, 0, 0.1) 40px,
+    rgba(0, 0, 0, 0.1) 41px
+  );
+  pointer-events: none;
+}
+
+/* ============================================
+   PAPER CARD STYLES
+   ============================================ */
+.paper-card {
+  background: var(--color-parchment-light);
+  border: 3px solid var(--color-ink-faded);
+  border-radius: 4px;
+  box-shadow: var(--shadow-paper);
+  position: relative;
+  padding: var(--space-lg);
+}
+
+.paper-card::before {
+  /* Torn edge effect */
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid var(--color-parchment-dark);
+  border-radius: 4px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Ink splatter decoration */
+.ink-splatter {
+  position: relative;
+}
+
+.ink-splatter::after {
+  content: '✦';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-ink-faded);
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+/* ============================================
+   HANDWRITTEN TEXT STYLES
+   ============================================ */
+.handwritten {
+  font-family: var(--font-handwritten);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.handwritten-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: var(--shadow-text);
+}
+
+.typewriter {
+  font-family: var(--font-body);
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+/* ============================================
+   DECORATIVE ELEMENTS
+   ============================================ */
+
+/* Rope divider */
+.rope-divider {
+  height: 3px;
+  background: var(--color-rope);
+  border-radius: 2px;
+  margin: var(--space-md) 0;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rope-divider::before,
+.rope-divider::after {
+  content: '◆';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-rust);
+  font-size: 1.2em;
+}
+
+.rope-divider::before {
+  left: 0;
+}
+
+.rope-divider::after {
+  right: 0;
+}
+
+/* Wanted poster border */
+.wanted-border {
+  border: 8px solid var(--color-wood-dark);
+  border-image: repeating-linear-gradient(
+    45deg,
+    var(--color-wood-dark),
+    var(--color-wood-dark) 10px,
+    var(--color-wood-light) 10px,
+    var(--color-wood-light) 20px
+  ) 8;
+  padding: var(--space-lg);
+  background: var(--color-parchment);
+}
+
+/* Stamp effect */
+.stamp {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  border: 3px solid var(--color-rust);
+  border-radius: 4px;
+  transform: rotate(-5deg);
+  font-family: var(--font-title);
+  color: var(--color-rust);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* ============================================
+   BUTTONS - Old West Style
+   ============================================ */
+.btn-western {
+  font-family: var(--font-handwritten);
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: var(--space-sm) var(--space-lg);
+  background: linear-gradient(180deg, var(--color-wood-light), var(--color-wood-medium));
+  color: var(--color-parchment-light);
+  border: var(--border-thick);
+  border-radius: 8px;
+  box-shadow: var(--shadow-wood);
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.btn-western:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, var(--color-wood-medium), var(--color-wood-dark));
+}
+
+.btn-western:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-paper);
+}
+
+/* ============================================
+   SCROLLBAR - Western Theme
+   ============================================ */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-parchment-dark);
+  border: 2px solid var(--color-wood-medium);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-medium);
+  border: 2px solid var(--color-parchment-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wood-dark);
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+  background: var(--color-rust);
+  color: var(--color-parchment-light);
+}
+
+::-moz-selection {
+  background: var(--color-rust);
+  color: var(--color-parchment-light);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-ink {
+  color: var(--color-ink-black);
+}
+
+.text-faded {
+  color: var(--color-ink-faded);
+}
+
+.bg-parchment {
+  background-color: var(--color-parchment);
+}
+
+.bg-wood {
+  background-color: var(--color-wood-medium);
+}
+
+.shadow-paper {
+  box-shadow: var(--shadow-paper);
+}
+
+.shadow-wood {
+  box-shadow: var(--shadow-wood);
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --space-xs: 0.4rem;
+    --space-sm: 0.8rem;
+    --space-md: 1.2rem;
+    --space-lg: 1.6rem;
+    --space-xl: 2.4rem;
+  }
+  
+  .signboard {
+    padding: var(--space-sm) var(--space-md);
+  }
+  
+  .btn-western {
+    font-size: 1em;
+    padding: var(--space-xs) var(--space-md);
+  }
+}
