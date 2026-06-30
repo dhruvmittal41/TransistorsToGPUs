@@ -32,7 +32,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "/images/fundamentals/history/RomanAbacusRecon.png">
+          <img src = "public/images/fundamentals/history/RomanAbacusRecon.png">
           <br><i>*Roman Abacus</i>
           </div>
           This led to another idea : <br>
@@ -45,7 +45,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "/images/fundamentals/history/Pascaline.jpg">
+          <img src = "public/images/fundamentals/history/Pascaline.jpg">
           <br><i>*Pascaline</i>
           </div>
           <br>
@@ -54,7 +54,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "/images/fundamentals/history/Babbage_Difference_Engine.jpg" width="600" height="400">
+          <img src = "public/images/fundamentals/history/Babbage_Difference_Engine.jpg" width="600" height="400">
           <br><i>*Difference Engine</i>
           </div>
           <br>
@@ -63,7 +63,7 @@ export const historyArticle: Article = {
           </li>
           <br>
           <div style="text-align: center;">
-          <img src = "/images/fundamentals/history/Babbages_Analytical_Engine.jpg" width="600" height="400">
+          <img src = "public/images/fundamentals/history/Babbages_Analytical_Engine.jpg" width="600" height="400">
           <br><i>*Analytical Engine</i>
           </div>
           <br>
