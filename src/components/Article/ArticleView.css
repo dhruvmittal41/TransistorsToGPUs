@@ -1,0 +1,249 @@
+.article-view {
+  background: white;
+  border-radius: 8px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.article-header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  color: #1a202c;
+  line-height: 1.2;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.article-description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background: #edf2f7;
+  color: #4a5568;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.article-introduction {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.article-section {
+  margin-bottom: 3rem;
+}
+
+.article-section h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.article-section h3 {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.4rem;
+  color: #2d3748;
+}
+
+.article-subsection {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.diagrams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.pitfalls-section {
+  background: #fff5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #fc8181;
+}
+
+.pitfall-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 6px;
+}
+
+.example-container {
+  margin-top: 1rem;
+}
+
+.example-container h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.example-container.wrong h4 {
+  color: #e53e3e;
+}
+
+.example-container.correct h4 {
+  color: #38a169;
+}
+
+.best-practices-section {
+  background: #f0fff4;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #68d391;
+}
+
+.practice-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 6px;
+}
+
+.research-section {
+  background: #ebf8ff;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #4299e1;
+}
+
+.research-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.paper-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.paper-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #2d3748;
+}
+
+.paper-authors {
+  color: #718096;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.paper-venue {
+  color: #4a5568;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.paper-summary {
+  margin: 1rem 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.paper-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.paper-link:hover {
+  color: #764ba2;
+}
+
+.further-reading {
+  list-style-position: inside;
+  line-height: 2;
+  color: #4a5568;
+}
+
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+  gap: 1rem;
+}
+
+.nav-link {
+  padding: 1rem 1.5rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+  max-width: 45%;
+}
+
+.nav-link:hover {
+  background: #764ba2;
+}
+
+.nav-link.prev {
+  text-align: left;
+}
+
+.nav-link.next {
+  text-align: right;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .article-view {
+    padding: 1.5rem;
+  }
+
+  .article-header h1 {
+    font-size: 2rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .article-nav {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    max-width: 100%;
+  }
+}

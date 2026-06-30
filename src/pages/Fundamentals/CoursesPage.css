@@ -1,0 +1,217 @@
+.courses-page {
+  max-width: 100%;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.courses-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  color: #2d3748;
+}
+
+.courses-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+.courses-content-single {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.courses-intro {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.courses-intro h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  color: #2d3748;
+}
+
+.courses-intro h3 {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  color: #2d3748;
+}
+
+.courses-intro p {
+  color: #4a5568;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.courses-intro ul {
+  color: #4a5568;
+  line-height: 2;
+  font-size: 1.05rem;
+}
+
+.courses-intro ul li {
+  margin-bottom: 0.5rem;
+}
+
+.chapters-list {
+  margin-bottom: 2rem;
+}
+
+.chapters-list > h2 {
+  font-size: 2rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.chapters-subtitle {
+  color: #718096;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chapter-card-large {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s;
+}
+
+.chapter-card-large:hover {
+  border-color: #667eea;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+}
+
+.chapter-card-header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.chapter-number-large {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.chapter-info-large h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.chapter-meta {
+  margin: 0;
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.chapter-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.topic-card-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #2d3748;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.topic-card-link:hover {
+  background: #edf2f7;
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.topic-number-badge {
+  width: 32px;
+  height: 32px;
+  background: #cbd5e0;
+  color: #2d3748;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.topic-card-link:hover .topic-number-badge {
+  background: #667eea;
+  color: white;
+}
+
+.topic-link-title {
+  flex: 1;
+}
+
+.topic-arrow {
+  color: #cbd5e0;
+  font-size: 1.25rem;
+  transition: all 0.3s;
+}
+
+.topic-card-link:hover .topic-arrow {
+  color: #667eea;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .courses-intro {
+    padding: 1.5rem;
+  }
+
+  .courses-header h1 {
+    font-size: 2rem;
+  }
+
+  .chapter-card-large {
+    padding: 1.5rem;
+  }
+
+  .chapter-topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-card-header {
+    gap: 1rem;
+  }
+
+  .chapter-number-large {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+}

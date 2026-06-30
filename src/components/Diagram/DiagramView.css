@@ -1,0 +1,19 @@
+.diagram-view {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.diagram-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.diagram-caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #718096;
+  font-style: italic;
+}

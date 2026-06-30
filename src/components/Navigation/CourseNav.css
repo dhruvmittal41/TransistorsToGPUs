@@ -1,0 +1,244 @@
+.course-nav {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 120px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0;
+}
+
+.course-nav-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.course-nav-header h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.course-nav-subtitle {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.course-nav-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.topic-section {
+  margin-bottom: 0.25rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.2s;
+}
+
+.topic-section:hover {
+  background: #f7fafc;
+}
+
+.topic-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.topic-header:hover {
+  background: #edf2f7;
+}
+
+.topic-header:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.topic-header.expanded {
+  background: #edf2f7;
+  font-weight: 600;
+}
+
+.expand-icon {
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #e0e7ff;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.topic-header:hover .expand-icon {
+  background: #667eea;
+  color: white;
+}
+
+.topic-header.expanded .expand-icon {
+  background: #667eea;
+  color: white;
+}
+
+.topic-title {
+  color: #1a202c;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.topic-count {
+  color: #718096;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: #edf2f7;
+  padding: 0.125rem 0.5rem;
+  border-radius: 10px;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.topic-header.expanded .topic-count {
+  background: #667eea;
+  color: white;
+}
+
+.subtopic-list {
+  list-style: none;
+  padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+  margin: 0;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtopic-list li {
+  margin-bottom: 0.125rem;
+}
+
+.subtopic-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 1rem 0.625rem 2.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.subtopic-list a::before {
+  content: '';
+  position: absolute;
+  left: 1.75rem;
+  width: 4px;
+  height: 4px;
+  background: #cbd5e0;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.subtopic-list a:hover {
+  background: #edf2f7;
+  color: #667eea;
+  padding-left: 2.75rem;
+}
+
+.subtopic-list a:hover::before {
+  background: #667eea;
+  transform: scale(1.5);
+}
+
+.subtopic-list a:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.subtopic-list a.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  padding-left: 2.75rem;
+}
+
+.subtopic-list a.active::before {
+  background: white;
+  transform: scale(1.5);
+}
+
+.subtopic-number {
+  font-size: 0.75rem;
+  color: #a0aec0;
+  font-weight: 600;
+  min-width: 1.25rem;
+  display: none;
+}
+
+.subtopic-list a.active .subtopic-number {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subtopic-title {
+  flex: 1;
+}
+
+/* Scrollbar styling */
+.course-nav-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.course-nav-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.course-nav-list::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.course-nav-list::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+@media (max-width: 1024px) {
+  .course-nav {
+    position: static;
+    max-height: none;
+  }
+}

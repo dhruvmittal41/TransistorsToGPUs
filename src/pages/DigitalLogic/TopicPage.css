@@ -1,0 +1,62 @@
+.topic-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.topic-content-full {
+  min-height: 60vh;
+  margin-top: 1rem;
+}
+
+.not-found,
+.no-content {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.not-found h1,
+.no-content h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  color: #2d3748;
+}
+
+.not-found p {
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+.placeholder-message {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #f7fafc;
+  border-radius: 12px;
+  text-align: left;
+  border: 2px solid #e2e8f0;
+}
+
+.placeholder-message p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.placeholder-message ul {
+  color: #4a5568;
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .topic-page {
+    max-width: 100%;
+  }
+
+  .not-found,
+  .no-content {
+    padding: 2rem 1.5rem;
+  }
+}
