@@ -58,8 +58,8 @@ function generateSitemap() {
   const staticPages = [
     { loc: BASE_URL + '/', priority: '1.0', changefreq: 'weekly' },
     { loc: BASE_URL + '/#/courses', priority: '0.9', changefreq: 'weekly' },
+    { loc: BASE_URL + '/#/projects', priority: '0.9', changefreq: 'weekly' },
     { loc: BASE_URL + '/#/about', priority: '0.5', changefreq: 'monthly' },
-    { loc: BASE_URL + '/#/research', priority: '0.7', changefreq: 'monthly' },
   ];
   
   staticPages.forEach(page => {

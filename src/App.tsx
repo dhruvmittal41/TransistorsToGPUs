@@ -10,7 +10,8 @@ import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/Home/HomePage";
 import CoursesPage from "./pages/Fundamentals/CoursesPage";
 import TopicPage from "./pages/DigitalLogic/TopicPage";
-import ResearchPage from "./pages/Research/ResearchPage";
+import ProjectsPage from "./pages/Projects/ProjectsPage";
+import ProjectDetailPage from "./pages/Projects/ProjectDetailPage";
 import AboutPage from "./pages/About/AboutPage";
 import CompactNav from "./components/Navigation/CompactNav";
 import { initGA, trackPageView } from "./utils/analytics";
@@ -46,7 +47,11 @@ function App() {
                 path="/topic/:topicSlug/:subtopicSlug"
                 element={<TopicPage />}
               />
-              <Route path="/research" element={<ResearchPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route
+                path="/project/:projectSlug"
+                element={<ProjectDetailPage />}
+              />
               <Route path="/about" element={<AboutPage />} />
             </Routes>
           </Layout>
