@@ -1,5 +1,5 @@
 import { Project } from "./projectTypes";
-import { halfAdderProject } from "./hardware/half-adder";
+import { EightBitALU } from "./hardware/8-bit_ALU";
 
 /**
  * Projects Index
@@ -11,7 +11,7 @@ import { halfAdderProject } from "./hardware/half-adder";
 // import { attentionMechanismProject } from "./software/attention-mechanism";
 
 export const allProjects: Project[] = [
-  halfAdderProject,
+  EightBitALU,
   // Add more projects here
 ];
 

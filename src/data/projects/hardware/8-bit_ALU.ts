@@ -1,17 +1,16 @@
-import { Project } from "./projectTypes";
+import { Project } from "../projectTypes";
 
-export const templateProject: Project = {
+export const EightBitALU: Project = {
   id: "8-bit_ALU",
   slug: "8-bit_ALU",
-  title: "8 BIT ALU",
+  title: "8 BIT ARITHMETIC and LOGIC UNIT (ALU)",
   category: "hardware",
   difficulty: "Beginner",
 
-  shortDescription:
-    "One-line description for project cards (keep it under 150 characters)",
+  shortDescription: "Implementation of a 8 bit ALU in System Verilog HDL",
 
   description: `
-    <p>Full description of the project. What does it do? Why is it important?</p>
+    <p>An ALU is the compuational unit of a CPU that does all the logical and aithmetic operations as the name suggests,</p>
     
     <p>This appears at the top of the project page. Use 2-3 paragraphs.</p>
     
@@ -33,6 +32,9 @@ export const templateProject: Project = {
     "Basic understanding of X",
   ],
 
+  // ============================================
+  // TECHNOLOGIES & TOOLS
+  // ============================================
   technologies: ["Tech1", "Tech2", "Tech3"],
   toolsRequired: [
     "Tool/Software 1 (version)",
@@ -40,9 +42,15 @@ export const templateProject: Project = {
     "Optional: Additional tool",
   ],
 
+  // ============================================
+  // TIME & EFFORT
+  // ============================================
   estimatedTime: "4 hours", // Be realistic!
   buildSteps: 6, // Number of steps in your tutorial
 
+  // ============================================
+  // CONTENT - INTRODUCTION (Optional but recommended)
+  // ============================================
   introduction: `
     <p class="quote">"Add an inspiring quote here" - Author</p>
     
@@ -51,6 +59,9 @@ export const templateProject: Project = {
     <p>What real-world application does it have?</p>
   `,
 
+  // ============================================
+  // CONTENT - BUILD STEPS (Required)
+  // ============================================
   steps: [
     // STEP 1
     {
@@ -72,9 +83,9 @@ export const templateProject: Project = {
           <li>Instruction 3</li>
         </ul>
       `,
-
+      // Optional: Add code snippet
       codeSnippet: {
-        language: "systemverilog",
+        language: "systemverilog", // or "python", "c", "javascript", etc.
         filename: "example.sv",
         title: "Code Example",
         code: `// Your code here
@@ -82,7 +93,7 @@ module example();
   // Implementation
 endmodule`,
       },
-
+      // Optional: Add diagram
       diagram: {
         src: "/images/projects/your-project/diagram1.png",
         alt: "Diagram description",
@@ -91,6 +102,7 @@ endmodule`,
       },
     },
 
+    // STEP 2
     {
       id: "step-2",
       title: "Step 2: Implementation",
@@ -106,6 +118,7 @@ endmodule`,
       },
     },
 
+    // STEP 3
     {
       id: "step-3",
       title: "Step 3: Testing and Verification",
@@ -114,8 +127,13 @@ endmodule`,
         <p>How to verify your implementation...</p>
       `,
     },
+
+    // Add more steps as needed...
   ],
 
+  // ============================================
+  // SCREENSHOTS (Optional but recommended)
+  // ============================================
   screenshots: [
     {
       src: "/images/projects/your-project/screenshot1.png",
@@ -130,6 +148,9 @@ endmodule`,
     },
   ],
 
+  // ============================================
+  // COMMON ISSUES (Optional but very helpful)
+  // ============================================
   commonIssues: [
     {
       title: "Issue 1: Compilation Error",
@@ -143,6 +164,9 @@ endmodule`,
     },
   ],
 
+  // ============================================
+  // EXTENSIONS (Optional)
+  // ============================================
   extensions: [
     {
       title: "Extension 1: Add Feature X",
@@ -156,6 +180,9 @@ endmodule`,
     },
   ],
 
+  // ============================================
+  // RESOURCES (Required)
+  // ============================================
   resources: [
     {
       type: "github",
@@ -177,6 +204,9 @@ endmodule`,
     },
   ],
 
+  // ============================================
+  // RELATED CONTENT (Optional)
+  // ============================================
   relatedArticles: [
     {
       slug: "/topic/fundamentals/related-topic",
@@ -191,11 +221,8 @@ endmodule`,
     },
   ],
 
-  featured: false, // Set to true for featured projects
+  featured: false,
   completedDate: "2026-07-01",
   lastUpdated: "2026-07-01",
-  tags: ["tag1", "tag2", "tag3", "tag4"],
-
-  thumbnail: "/images/projects/your-project/thumbnail.png",
-  coverImage: "/images/projects/your-project/cover.png",
+  tags: ["Computer Architecture", "ALU", "Digital Logic"],
 };
