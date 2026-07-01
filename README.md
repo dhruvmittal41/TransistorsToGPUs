@@ -208,7 +208,3 @@ This project is for educational purposes.
 ## 🤝 Contributing
 
 This is a personal learning project, but suggestions and corrections are welcome!
-
-## 📧 Contact
-
-[Add your contact information here]
