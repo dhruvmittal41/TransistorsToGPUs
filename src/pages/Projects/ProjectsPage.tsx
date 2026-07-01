@@ -52,9 +52,9 @@ const ProjectsPage: React.FC = () => {
                   <div className="featured-badge">Featured</div>
                   <div className="project-category-icon">
                     {project.category === "hardware" ? (
-                      <ChipIcon size={32} />
+                      <ChipIcon size={24} />
                     ) : (
-                      <CodeIcon size={32} />
+                      <CodeIcon size={24} />
                     )}
                   </div>
                   <h3>{project.title}</h3>

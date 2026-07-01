@@ -93,16 +93,19 @@
 
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
   margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured-card {
   background: var(--color-parchment);
-  border: 4px solid var(--color-wood-dark);
-  border-radius: 8px;
-  padding: 2rem;
+  border: 3px solid var(--color-wood-dark);
+  border-radius: 6px;
+  padding: 1.5rem;
   box-shadow: var(--shadow-wood);
   position: relative;
   transition: all var(--transition-medium);
@@ -112,43 +115,43 @@
   /* Corner nail decoration */
   content: "";
   position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 10px;
-  height: 10px;
+  top: 10px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
   background: var(--color-wood-dark);
   border-radius: 50%;
   box-shadow:
-    calc(100% - 24px) 0 0 var(--color-wood-dark),
-    0 calc(100% - 24px) 0 var(--color-wood-dark),
-    calc(100% - 24px) calc(100% - 24px) 0 var(--color-wood-dark);
+    calc(100% - 20px) 0 0 var(--color-wood-dark),
+    0 calc(100% - 20px) 0 var(--color-wood-dark),
+    calc(100% - 20px) calc(100% - 20px) 0 var(--color-wood-dark);
 }
 
 .featured-card:hover {
-  transform: translateY(-8px) rotate(-1deg);
+  transform: translateY(-6px) rotate(-1deg);
   box-shadow: var(--shadow-deep);
   border-color: var(--color-rust);
 }
 
 .featured-badge {
   display: inline-block;
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 0.8rem;
   background: var(--color-gold);
   color: var(--color-ink-black);
   font-family: var(--font-title);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
   border: 2px solid var(--color-copper);
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   box-shadow: var(--shadow-paper);
 }
 
 .project-category-icon {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   background: linear-gradient(
     180deg,
     var(--color-wood-light),
@@ -159,41 +162,41 @@
   align-items: center;
   justify-content: center;
   color: var(--color-parchment-light);
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1rem;
   box-shadow: var(--shadow-wood);
-  border: 3px solid var(--color-wood-dark);
+  border: 2px solid var(--color-wood-dark);
 }
 
 .featured-card h3 {
   font-family: var(--font-handwritten);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-ink-black);
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.5rem 0;
   text-align: center;
   letter-spacing: 0.5px;
 }
 
 .project-difficulty {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.6rem;
   background: var(--color-rust);
   color: var(--color-parchment-light);
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
 }
 
 .featured-card p {
   font-family: var(--font-body);
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: var(--color-ink-brown);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* ============================================

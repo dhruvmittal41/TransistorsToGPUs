@@ -1,26 +1,31 @@
+/* ============================================
+   BREADCRUMB - Old West Trail Style
+   ============================================ */
 .breadcrumb {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  font-family: var(--font-body);
   font-size: 0.9rem;
 }
 
 .breadcrumb-item {
-  color: #4a5568;
+  color: var(--color-ink-brown);
   text-decoration: none;
-  transition: color 0.3s;
-}
-
-.breadcrumb-item:hover {
-  color: #667eea;
-}
-
-.breadcrumb-item.current {
-  color: #2d3748;
+  transition: color var(--transition-fast);
   font-weight: 600;
 }
 
+.breadcrumb-item:hover {
+  color: var(--color-rust);
+}
+
+.breadcrumb-item.current {
+  color: var(--color-ink-black);
+  font-weight: 700;
+}
+
 .breadcrumb-separator {
-  color: #a0aec0;
+  color: var(--color-ink-faded);
 }
