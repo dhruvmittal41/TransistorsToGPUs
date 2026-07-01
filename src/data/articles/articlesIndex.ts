@@ -4,8 +4,13 @@ import { Article } from "./articleTypes";
 // For now, it's an empty array - you'll add articles as you write them
 import { transistorsArticle } from "./fundamentals/transistors";
 import { historyArticle } from "./fundamentals/history";
+import { LogicGatesArticle } from "./fundamentals/logic-gates";
 
-export const allArticles: Article[] = [transistorsArticle, historyArticle];
+export const allArticles: Article[] = [
+  transistorsArticle,
+  historyArticle,
+  LogicGatesArticle,
+];
 
 // Helper functions to retrieve articles
 export const getArticleById = (id: string): Article | undefined => {
